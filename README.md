@@ -9,13 +9,6 @@ Installing
 ----------
 Use crontab or whatever you use to schedule jobs.
 
-Crontab example:
-
-PATH=$PATH:/usr/bin:/bin:/usr/local/bin
-# m h  dom mon dow   command
-  0,30 * * * * ruby /home/xyz/bitcoin_price_alert.rb 
-
-
 Usage
 -----
 ```ruby
@@ -33,11 +26,12 @@ bcoin.current_value
 
 Customization
 ------------
-# Currencies
-  # ["ARS", "AUD", "BRL", "CAD", "CHF", "CLP", "CNY", "CZK", "DKK", "EUR", "GAU", "GBP", "HKD", "HUF", "ILS", "INR", "JPY", "LTC", "MXN", "NOK", "NZD", "PLN", "RUB", "SEK", "SGD", "SLL", "THB", "UAH", "USD", "XRP", "ZAR"]    
+Currencies:
+  ["ARS", "AUD", "BRL", "CAD", "CHF", "CLP", "CNY", "CZK", "DKK", "EUR", "GAU", "GBP", "HKD", "HUF", "ILS", "INR", "JPY", "LTC", "MXN", "NOK", "NZD", "PLN", "RUB", "SEK", "SGD", "SLL", "THB", "UAH", "USD", "XRP", "ZAR"]    
 
-# Fav Sites (optional)
-  # ["localbtcARS", "bitmarketAUD", "btcmarketsAUD", "cryptoxAUD", "localbtcAUD", "mtgoxAUD", "ruxumAUD", "thAUD", "wbxAUD", "weexAUD", "bbmBRL", "localbtcBRL", "mrcdBRL", "localbtcCAD", "lybitCAD", "mtgoxCAD", "virtexCAD", "weexCAD", "localbtcCHF", "mtgoxCHF", "ruxumCHF", "thCLP", "anxhkCNY", "btcnCNY", "mtgoxCNY", "rmbtbCNY", "bitcashCZK", "localbtcCZK", "localbtcDKK", "mtgoxDKK", "aqoinEUR", "b7EUR", "bcEUR", "bitcurexEUR", "bitmarketEUR", "btc24EUR", "btcdeEUR", "btceEUR", "btcexEUR", "crytrEUR", "fbtcEUR", "globalEUR", "imcexEUR", "intrsngEUR", "justEUR", "localbtcEUR", "mtgoxEUR", "rippleEUR", "rockEUR", "ruxumEUR", "thEUR", "vcxEUR", "bcmBMGAU", "bcmPXGAU", "bcGBP", "bitmarketGBP", "britcoinGBP", "globalGBP", "intrsngGBP", "localbtcGBP", "mtgoxGBP", "ruxumGBP", "anxhkHKD", "btchkexHKD", "localbtcHKD", "mtgoxHKD", "ruxumHKD", "ruxumHUF", "bit2cILS", "localbtcILS", "localbtcINR", "thINR", "btcexJPY", "mtgoxJPY", "ruxumJPY", "bitmeLTC", "justLTC", "localbtcMXN", "justNOK", "localbtcNOK", "bitnzNZD", "localbtcNZD", "mtgoxNZD", "bidxtrmPLN", "bitchangePLN", "bitcurexPLN", "bitmarketPLN", "bitomatPLN", "freshPLN", "globalPLN", "intrsngPLN", "localbtcPLN", "mtgoxPLN", "ruxumPLN", "bitmarketRUB", "btceRUR", "btcexRUB", "btcexWMR", "btcexYAD", "localbtcRUB", "mtgoxRUB", "ruxumRUB", "fybseSEK", "kptnSEK", "localbtcSEK", "mtgoxSEK", "ruxumSEK", "fybsgSGD", "localbtcSGD", "mtgoxSGD", "ruxumSGD", "rockSLL", "virwoxSLL", "localbtcTHB", "mtgoxTHB", "ruxumTHB", "ruxumUAH", "anxhkUSD", "b2cUSD", "b7USD", "bcmBMUSD", "bcmLRUSD", "bcmMBUSD", "bcmPPUSD", "bitboxUSD", "bitfloorUSD", "bitkonanUSD", "bitmarketUSD", "bitmeUSD", "bitstampUSD", "btc24USD", "btceUSD", "btcexUSD", "btcexWMZ", "btctreeUSD", "cbxUSD", "cryptoxUSD", "crytrUSD", "exchbUSD", "fbtcUSD", "globalUSD", "icbitUSD", "imcexUSD", "intrsngUSD", "justUSD", "localbtcUSD", "lybitUSD", "mtgoxUSD", "rippleUSD", "rockUSD", "ruxumUSD", "thLRUSD", "thUSD", "vcxUSD", "weexUSD", "justXRP", "rippleXRP", "snwcnXRP", "bitxZAR", "localbtcZAR", "ruxumZAR"]
+Fav Sites (optional):
+
+  ["localbtcARS", "bitmarketAUD", "btcmarketsAUD", "cryptoxAUD", "localbtcAUD", "mtgoxAUD", "ruxumAUD", "thAUD", "wbxAUD", "weexAUD", "bbmBRL", "localbtcBRL", "mrcdBRL", "localbtcCAD", "lybitCAD", "mtgoxCAD", "virtexCAD", "weexCAD", "localbtcCHF", "mtgoxCHF", "ruxumCHF", "thCLP", "anxhkCNY", "btcnCNY", "mtgoxCNY", "rmbtbCNY", "bitcashCZK", "localbtcCZK", "localbtcDKK", "mtgoxDKK", "aqoinEUR", "b7EUR", "bcEUR", "bitcurexEUR", "bitmarketEUR", "btc24EUR", "btcdeEUR", "btceEUR", "btcexEUR", "crytrEUR", "fbtcEUR", "globalEUR", "imcexEUR", "intrsngEUR", "justEUR", "localbtcEUR", "mtgoxEUR", "rippleEUR", "rockEUR", "ruxumEUR", "thEUR", "vcxEUR", "bcmBMGAU", "bcmPXGAU", "bcGBP", "bitmarketGBP", "britcoinGBP", "globalGBP", "intrsngGBP", "localbtcGBP", "mtgoxGBP", "ruxumGBP", "anxhkHKD", "btchkexHKD", "localbtcHKD", "mtgoxHKD", "ruxumHKD", "ruxumHUF", "bit2cILS", "localbtcILS", "localbtcINR", "thINR", "btcexJPY", "mtgoxJPY", "ruxumJPY", "bitmeLTC", "justLTC", "localbtcMXN", "justNOK", "localbtcNOK", "bitnzNZD", "localbtcNZD", "mtgoxNZD", "bidxtrmPLN", "bitchangePLN", "bitcurexPLN", "bitmarketPLN", "bitomatPLN", "freshPLN", "globalPLN", "intrsngPLN", "localbtcPLN", "mtgoxPLN", "ruxumPLN", "bitmarketRUB", "btceRUR", "btcexRUB", "btcexWMR", "btcexYAD", "localbtcRUB", "mtgoxRUB", "ruxumRUB", "fybseSEK", "kptnSEK", "localbtcSEK", "mtgoxSEK", "ruxumSEK", "fybsgSGD", "localbtcSGD", "mtgoxSGD", "ruxumSGD", "rockSLL", "virwoxSLL", "localbtcTHB", "mtgoxTHB", "ruxumTHB", "ruxumUAH", "anxhkUSD", "b2cUSD", "b7USD", "bcmBMUSD", "bcmLRUSD", "bcmMBUSD", "bcmPPUSD", "bitboxUSD", "bitfloorUSD", "bitkonanUSD", "bitmarketUSD", "bitmeUSD", "bitstampUSD", "btc24USD", "btceUSD", "btcexUSD", "btcexWMZ", "btctreeUSD", "cbxUSD", "cryptoxUSD", "crytrUSD", "exchbUSD", "fbtcUSD", "globalUSD", "icbitUSD", "imcexUSD", "intrsngUSD", "justUSD", "localbtcUSD", "lybitUSD", "mtgoxUSD", "rippleUSD", "rockUSD", "ruxumUSD", "thLRUSD", "thUSD", "vcxUSD", "weexUSD", "justXRP", "rippleXRP", "snwcnXRP", "bitxZAR", "localbtcZAR", "ruxumZAR"]
 
 
 Contributing
