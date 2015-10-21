@@ -59,8 +59,8 @@ class BitCoin
 
       # Email target
   	Mail.deliver do
-  	  to 'alx.roller@gmail.com'
-  	  from 'bitcoin@example.net'
+  	  to 'your.email@gmail.com'
+  	  from 'bitcoin@fake-email.net'
   	  subject 'Bitcoin price alert'
   	  body body_text
   	end
